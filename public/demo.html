@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a demo — DryRunZ</title>
+<meta name="description" content="Reps practice live voice &amp; text simulations against AI customers. Built in minutes, seven languages, zero customer data required. Continuously developed. Book a 30-minute demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="brand" aria-label="DryRunZ home"><img src="/assets/logo-blue.svg" alt="DryRunZ" width="248" height="94"></a>
+    <nav class="links" id="navLinks" aria-label="Primary">
+      <a href="/practice">Practice</a>
+      <a href="/learn">Learn</a>
+      <a href="/loop">Loop</a>
+      <a href="/use-cases">Use cases</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/blog">Blog</a>
+    </nav>
+    <span class="nav-spacer"></span>
+    <a href="https://app.dryrunz.ai/login.html" class="nav-login" id="navLogin" target="_blank" rel="noopener">Log in</a>
+    <a href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" class="btn btn-primary nav-cta" id="navCta" target="_blank" rel="noopener">Book a demo</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+
+  <div class="block">
+    <div class="wrap demo-grid">
+      <div class="demo-aside">
+        <span class="eyebrow reveal">Book a demo</span>
+        <h1 class="reveal" style="max-width:12ch">See it built live.</h1>
+        <p class="sub reveal" style="margin-top:20px">Thirty minutes. Bring a real scenario from your floor — we'll turn it into a working simulation while you watch, in your language. No deck, no data required.</p>
+        <ul class="win-list reveal" data-static-dia="1">
+          <li><span class="wl-dia"></span><div><h3>Your scenario.</h3><p>A real moment from your floor, playable by the end of the call.</p></div></li>
+          <li><span class="wl-dia"></span><div><h3>Your language.</h3><p>Hebrew, English, Greek — the one your customers actually speak.</p></div></li>
+          <li><span class="wl-dia"></span><div><h3>Zero data.</h3><p>Nothing to hand over. Nothing to integrate.</p></div></li>
+        </ul>
+      </div>
+
+      <div class="demo-book reveal">
+        <form id="web3form" class="demo-form">
+          <input type="hidden" name="access_key" value="590a8888-d5b4-455f-8680-bf58f30eedd8">
+          <input type="hidden" name="subject" value="New demo request — DryRunZ">
+          <input type="hidden" name="from_name" value="DryRunZ website">
+          <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-first">First name <span class="req">*</span></label>
+              <input id="f-first" name="first_name" type="text" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="f-last">Last name <span class="req">*</span></label>
+              <input id="f-last" name="last_name" type="text" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Company email <span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Mobile phone <span class="req">*</span></label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-team">Team size <span class="req">*</span></label>
+              <select id="f-team" name="team_size" required>
+                <option value="" disabled selected>Select…</option>
+                <option>1–10</option>
+                <option>11–50</option>
+                <option>51–200</option>
+                <option>201–1000</option>
+                <option>1000+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-lang">Preferred language</label>
+              <select id="f-lang" name="preferred_language">
+                <option value="" selected>Select…</option>
+                <option>English</option>
+                <option>Greek</option>
+                <option>Spanish</option>
+                <option>Italian</option>
+                <option>Arabic</option>
+                <option>Hebrew</option>
+                <option>Portuguese</option>
+                <option>German</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-comments">Comments</label>
+            <textarea id="f-comments" name="comments"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" id="web3submit">Submit your data here</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="under-note">We reply within one business day. Or email <a href="mailto:admin@dryrunz.ai">admin@dryrunz.ai</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer>
+  <div class="footer-mocks">
+    <div class="wrap">
+      <div class="footer-strip-label">The same moments your reps live</div>
+      <div class="strip">
+        <div data-mock="win" data-static="1"></div>
+        <div data-mock="board" data-static="1"></div>
+        <div data-mock="insight" data-static="1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap footer-main">
+    <div class="footer-brand">
+      <img src="/assets/logo-white.svg" alt="DryRunZ" width="248" height="94">
+      <p class="footer-blurb">DryRunZ is a lean, AI-powered team building the practice layer for customer-facing work. Founded in Israel. Fluent in English, Arabic, Greek, Spanish — and counting.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="/practice">Practice</a>
+      <a href="/learn">Learn</a>
+      <a href="/loop">Loop</a>
+      <a href="/use-cases">Use cases</a>
+      <a href="/pricing">Pricing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/blog">Blog</a>
+      <a href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" target="_blank" rel="noopener">Book a demo</a>
+      <a href="/demo">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>© 2026 DryRunZ</span>
+    <span class="sep">·</span>
+    <span>Practice Practice Practice Practice Perfect</span>
+    <span class="award" aria-label="Second place fintech award winner">🏆 2nd place · Fintech Award winner</span>
+  </div>
+</footer>
+<script src="/app.js"></script>
+<script>
+(function(){
+  var form = document.getElementById('web3form');
+  if(!form) return;
+  var status = document.getElementById('formStatus');
+  var btn = document.getElementById('web3submit');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var hp = form.querySelector('[name="botcheck"]');
+    if(hp && hp.checked) return;                 /* honeypot: silently drop bots */
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    status.className = 'form-status';
+    status.textContent = 'Sending…';
+    btn.disabled = true;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+      if(json.success){
+        form.reset();
+        status.className = 'form-status ok';
+        status.textContent = 'Thanks — we’ll reply within one business day.';
+      } else {
+        status.className = 'form-status err';
+        status.textContent = (json.message || 'Something went wrong. Please email admin@dryrunz.ai.');
+      }
+    })
+    .catch(function(){
+      status.className = 'form-status err';
+      status.textContent = 'Network error. Please try again, or email admin@dryrunz.ai.';
+    })
+    .finally(function(){ btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>

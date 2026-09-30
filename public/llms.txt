@@ -1,0 +1,35 @@
+# DryRunZ
+
+> DryRunZ is an employee-enablement platform that helps frontline teams improve through realistic, AI roleplay simulations of live interactions — by voice (speech-to-speech) and by text — with personalized coaching and performance feedback. Built on advanced large language models.
+
+## What it is
+Frontline employees practice real interactions against AI counterparts before those conversations happen for real. Each run returns individual coaching, concrete tips, and performance feedback. Simulations run in two modes: speech-to-speech (voice) and text.
+
+## How it's different
+- Strict zero-data policy: DryRunZ does not require customers to hand over confidential data or grant access to internal systems (CRM, records, knowledge base).
+- Proprietary methods keep the simulations realistic and continuously improving without ever touching sensitive corporate data.
+- A minimal security footprint means regulated enterprises — including large fintech companies and card issuers — can deploy fast.
+
+## Key capabilities
+- Fully custom simulations you build yourself.
+- Automatic simulations that adapt to each rep's needs on the fly.
+- Personalized, individual coaching, tips, and performance scoring.
+- Voice (speech-to-speech) and text practice.
+
+## Languages
+Strong multilingual focus. English is fully supported, with special emphasis on non-English languages.
+
+## Who it's for
+Frontline and customer-facing teams across many segments — sales, customer support, healthcare, and virtually any frontline role — plus the learning and development teams that train them, including regulated industries such as fintech.
+
+## Main pages
+- Home: https://dryrunz.ai/
+- Practice (rehearse live simulations, built in Studio): https://dryrunz.ai/practice
+- Learn (personalized, adaptive courses): https://dryrunz.ai/learn
+- Loop (improve from real calls): https://dryrunz.ai/loop
+- Use cases: https://dryrunz.ai/use-cases
+- Pricing: https://dryrunz.ai/pricing
+- Blog: https://dryrunz.ai/blog
+- Book a demo: https://dryrunz.ai/demo
+- Privacy: https://dryrunz.ai/privacy
+- Terms: https://dryrunz.ai/terms

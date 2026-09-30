@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn — DryRunZ</title>
+<meta name="description" content="Upload your material. Learn drafts the course and questions, you approve them, and every employee gets a personal path built around their own gaps — ending in an exam, a practical test, or a live simulation. Book a 30-minute demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="brand" aria-label="DryRunZ home"><img src="/assets/logo-blue.svg" alt="DryRunZ" width="248" height="94"></a>
+    <nav class="links" id="navLinks" aria-label="Primary">
+      <a href="/practice">Practice</a>
+      <a href="/learn">Learn</a>
+      <a href="/loop">Loop</a>
+      <a href="/use-cases">Use cases</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/blog">Blog</a>
+    </nav>
+    <span class="nav-spacer"></span>
+    <a href="https://app.dryrunz.ai/login.html" class="nav-login" id="navLogin" target="_blank" rel="noopener">Log in</a>
+    <a href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" class="btn btn-primary nav-cta" id="navCta" target="_blank" rel="noopener">Book a demo</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+
+  <!-- ===================== LEARN HERO (self-contained embed, scoped .dz-learn-hero) ===================== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <style>
+  .dz-learn-hero {
+    --dz-bg: #161826;
+    --dz-text: #e9e9ed;
+    --dz-n200: #e4e7f5;
+    --dz-n600: #75798c;
+    --dz-n800: #3f424d;
+    --dz-a300: #d2cefd;
+    --dz-a500: #968ae0;
+    --dz-a600: #796cbf;
+    --dz-a900: #2b2741;
+    --dz-radius: 8px;
+    background: radial-gradient(1100px 600px at 80% -10%, #1f2139 0%, var(--dz-bg) 60%);
+    color: var(--dz-text);
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .dz-learn-hero * { box-sizing: border-box; }
+  .dz-hero-inner {
+    max-width: 1180px; margin: 0 auto; padding: 56px 40px 96px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 72px; align-items: center;
+  }
+  .dz-kicker {
+    display: inline-flex; align-items: center; gap: 8px; font-size: 12px;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--dz-a300); margin-bottom: 20px;
+  }
+  .dz-kicker i { width: 22px; height: 1px; background: var(--dz-a600); display: block; }
+  .dz-learn-hero h1 {
+    font-weight: 500; font-size: 60px; line-height: 1.03; letter-spacing: -.03em;
+    margin: 0 0 22px; text-wrap: balance;
+  }
+  .dz-sub { font-size: 18px; line-height: 1.6; color: #b2b6ca; margin: 0 0 32px; max-width: 30em; text-wrap: pretty; }
+  .dz-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+  .dz-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 10px 18px; border-radius: var(--dz-radius); font-size: 15px;
+    text-decoration: none; border: 1px solid var(--dz-a600); color: var(--dz-a300);
+    background: transparent; transition: background .15s, border-color .15s, color .15s;
+  }
+  .dz-btn:hover { background: rgba(145,132,217,.12); color: #e7e5fe; }
+  .dz-btn:active { border-color: #b5abfc; }
+  .dz-btn:focus-visible { outline: 2px solid #9184d9; outline-offset: 2px; }
+  .dz-btn-secondary { border-color: var(--dz-n800); color: var(--dz-text); }
+  .dz-btn-secondary:hover { border-color: #595d6c; background: rgba(233,233,237,.05); }
+  .dz-note { font-size: 13px; color: var(--dz-n600); margin: 0; }
+
+  .dz-figure { justify-self: end; position: relative; width: 100%; max-width: 460px; }
+  .dz-figure .dz-glow {
+    position: absolute; left: -8%; top: 12%; width: 116%; height: 76%; border-radius: 50%;
+    background: radial-gradient(ellipse, var(--dz-a900) 0%, transparent 70%); pointer-events: none;
+  }
+  .dz-rail { position: absolute; left: 15px; top: 0; height: 100%; }
+  .dz-steps { position: relative; display: grid; gap: 10px; }
+  .dz-step { display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center; gap: 14px; }
+  .dz-dot {
+    justify-self: center; width: 11px; height: 11px; border-radius: 50%;
+    background: var(--dz-n800); animation: dz-dot 12s ease-in-out infinite;
+  }
+  .dz-card {
+    border: 1px solid var(--dz-n800); border-radius: var(--dz-radius); padding: 13px 16px;
+    background: rgba(35,37,50,.45); animation: dz-row 12s ease-in-out infinite;
+  }
+  .dz-label {
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--dz-n600);
+    margin-bottom: 5px; animation: dz-label 12s ease-in-out infinite;
+  }
+  .dz-line { font-size: 14px; color: var(--dz-n200); }
+  .dz-meter { flex: 1; height: 4px; min-width: 40px; border-radius: 2px; background: var(--dz-n800); overflow: hidden; }
+  .dz-meter span { display: block; height: 100%; width: 8%; background: var(--dz-a500); animation: dz-fill 12s ease-in-out infinite; }
+  .dz-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dz-chip {
+    border: 1px solid var(--dz-n800); border-radius: var(--dz-radius); padding: 9px 13px;
+    font-size: 13px; color: var(--dz-n200); background: rgba(35,37,50,.45);
+    animation: dz-row 12s ease-in-out infinite;
+  }
+  /* sequence timing */
+  .dz-s2 .dz-dot, .dz-s2 .dz-card, .dz-s2 .dz-label { animation-delay: -9.6s; }
+  .dz-s3 .dz-dot, .dz-s3 .dz-card, .dz-s3 .dz-label { animation-delay: -7.2s; }
+  .dz-s4 .dz-dot, .dz-s4 .dz-card, .dz-s4 .dz-label, .dz-s4 .dz-meter span { animation-delay: -4.8s; }
+  .dz-s5 .dz-dot, .dz-s5 .dz-label { animation-delay: -2.4s; }
+  .dz-s5 .dz-chip:nth-child(1) { animation-delay: -2.4s; }
+  .dz-s5 .dz-chip:nth-child(2) { animation-delay: -2.2s; }
+  .dz-s5 .dz-chip:nth-child(3) { animation-delay: -2s; }
+
+  @keyframes dz-flow { to { stroke-dashoffset: -120; } }
+  @keyframes dz-row {
+    0%, 1% { border-color: var(--dz-n800); background: rgba(35,37,50,.45); }
+    4%, 17% { border-color: var(--dz-a600); background: rgba(66,58,106,.35); }
+    21%, 100% { border-color: var(--dz-n800); background: rgba(35,37,50,.45); }
+  }
+  @keyframes dz-dot {
+    0%, 1% { background: var(--dz-n800); box-shadow: none; }
+    4%, 17% { background: var(--dz-a500); box-shadow: 0 0 0 5px rgba(145,132,217,.14); }
+    21%, 100% { background: var(--dz-n800); box-shadow: none; }
+  }
+  @keyframes dz-label {
+    0%, 1% { color: var(--dz-n600); }
+    4%, 17% { color: var(--dz-a300); }
+    21%, 100% { color: var(--dz-n600); }
+  }
+  @keyframes dz-fill { 0%, 60% { width: 8%; } 70%, 78% { width: 64%; } 88%, 100% { width: 8%; } }
+
+  @media (max-width: 720px) {
+    .dz-hero-inner { padding: 40px 20px 64px; gap: 44px; }
+    .dz-learn-hero h1 { font-size: 40px; }
+    .dz-sub { font-size: 16px; }
+    .dz-figure { justify-self: start; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .dz-learn-hero * { animation: none !important; }
+  }
+  </style>
+
+  <section class="dz-learn-hero">
+    <div class="dz-hero-inner">
+      <div>
+        <div class="dz-kicker"><i></i>Adaptive learning</div>
+        <h1>Learn what you don't know yet.</h1>
+        <p class="dz-sub">Upload your material. We draft the course and the questions, you approve them, and every learner gets a live course built around their own gaps — ending in an exam, a practical test, or a simulation.</p>
+        <div class="dz-actions">
+          <a class="dz-btn" href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" target="_blank" rel="noopener">Book a demo</a>
+          <a class="dz-btn dz-btn-secondary" href="/practice">See Practice</a>
+        </div>
+        <p class="dz-note">Your content in. Nothing published until you approve it.</p>
+      </div>
+
+      <div class="dz-figure">
+        <div class="dz-glow"></div>
+        <svg class="dz-rail" viewBox="0 0 2 460" preserveAspectRatio="none" width="2" height="100%" aria-hidden="true">
+          <line x1="1" y1="10" x2="1" y2="450" stroke="#3f424d" stroke-width="1.4"></line>
+          <line x1="1" y1="10" x2="1" y2="450" stroke="#968ae0" stroke-width="1.6" stroke-dasharray="4 12" stroke-linecap="round" style="animation: dz-flow 3s linear infinite;"></line>
+        </svg>
+
+        <div class="dz-steps">
+          <div class="dz-step dz-s1">
+            <div class="dz-dot"></div>
+            <div class="dz-card">
+              <div class="dz-label">01 · Upload</div>
+              <div class="dz-line">Manuals, policies, decks, scripts</div>
+            </div>
+          </div>
+          <div class="dz-step dz-s2">
+            <div class="dz-dot"></div>
+            <div class="dz-card">
+              <div class="dz-label">02 · We generate</div>
+              <div class="dz-line">Raw course material and questions</div>
+            </div>
+          </div>
+          <div class="dz-step dz-s3">
+            <div class="dz-dot"></div>
+            <div class="dz-card">
+              <div class="dz-label">03 · You approve</div>
+              <div class="dz-line">Edit, cut, sign off — nothing ships unseen</div>
+            </div>
+          </div>
+          <div class="dz-step dz-s4">
+            <div class="dz-dot"></div>
+            <div class="dz-card">
+              <div class="dz-label">04 · Live course, per learner</div>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="dz-line" style="white-space: nowrap;">Adapts to their gaps</div>
+                <div class="dz-meter"><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dz-step dz-s5">
+            <div class="dz-dot"></div>
+            <div>
+              <div class="dz-label">05 · One of three endings</div>
+              <div class="dz-chips">
+                <span class="dz-chip">Exam</span>
+                <span class="dz-chip">Practical test</span>
+                <span class="dz-chip">Simulation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== /LEARN HERO ===================== -->
+
+  <div class="block">
+    <div class="wrap">
+      <span class="eyebrow reveal">One course for all is obsolete</span>
+      <h2 class="lead-head reveal" style="max-width:20ch">Nobody learns from the same course.</h2>
+      <p class="lede reveal" style="margin-top:16px;max-width:60ch">Your team doesn't share one skill gap — so why do they share one course? Learn starts every employee with a short diagnostic, then builds each one a personal path: skip what they already know, focus where they're weak, practice what matters.</p>
+      <div class="hero-cta reveal" style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px">
+        <a href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a demo</a>
+        <a href="#sequence" class="btn btn-ghost btn-lg">See a path build itself</a>
+      </div>
+
+      <!-- THE SEQUENCE -->
+      <span id="sequence" class="eyebrow reveal" style="margin-top:64px">The sequence</span>
+      <h2 class="lead-head reveal">How it works.</h2>
+      <div class="steps" style="grid-template-columns:repeat(2,1fr);margin-top:24px">
+        <div class="step reveal">
+          <div class="step-num">Upload</div>
+          <h3>Give it your material.</h3>
+          <p>Drop in your source content. Studio reads it and generates the diagnostic, the lessons, and the quiz bank — you review and approve.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">Diagnose</div>
+          <h3>Find each person's gaps.</h3>
+          <p>A short check before the course begins. Not a test — a map. Strong topics fold away. Weak ones become the course.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">Learn</div>
+          <h3>A path built for one.</h3>
+          <p>Each employee gets their own sequence: focused lessons, quick checks, real interactions. In their language, at their level, with an AI coach one tap away.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">Prove</div>
+          <h3>Show the delta.</h3>
+          <p>A final quiz — different questions for every colleague — closes the loop. You don't get completion rates. You get before-and-after, per topic, per person.</p>
+        </div>
+      </div>
+
+      <!-- THE NUMBER THAT MATTERS -->
+      <div class="reveal" style="margin-top:clamp(56px,7vw,88px)">
+        <span class="eyebrow">The number that matters</span>
+        <h2 class="lead-head" style="max-width:18ch">Completion is not learning.</h2>
+        <p class="lede" style="margin-top:16px;max-width:62ch">Every LMS can tell you who finished. Learn tells you who improved — diagnostic score to final score, topic by topic, rep by rep, rolled up across the whole team. That's the number a training budget is supposed to buy.</p>
+      </div>
+
+      <!-- CUSTOM, NOT IMPROVISED -->
+      <div class="reveal" style="margin-top:clamp(56px,7vw,88px)">
+        <span class="eyebrow">Custom, not improvised</span>
+        <h2 class="lead-head" style="max-width:22ch">Every path is personal. Every word is approved.</h2>
+        <p class="lede" style="margin-top:16px;max-width:62ch">The path adapts to each employee — the content never freelances. Every lesson, question, and answer comes from material your trainer uploaded and signed off before the course went live. Personalization decides the order and the focus, never the facts. We do not teach mistakes.</p>
+      </div>
+
+      <!-- LEARNING MEETS PRACTICE -->
+      <div class="two-col reveal" style="margin-top:clamp(56px,7vw,88px)">
+        <div>
+          <span class="eyebrow">Learning meets practice</span>
+          <h2 class="lead-head">Read it. Then live it.</h2>
+          <p class="lede" style="margin-top:16px">Learn and Practice are one platform. A course can end where it should: in a live simulation with an AI customer, applying exactly what was just learned. Knowledge that gets rehearsed is knowledge that sticks.</p>
+        </div>
+        <div data-mock="voice"></div>
+      </div>
+
+      <!-- YOUR DATA STAYS YOURS -->
+      <div class="reveal" style="margin-top:clamp(56px,7vw,88px)">
+        <div class="datacard">
+          <span class="eyebrow">Your data stays yours</span>
+          <h2 class="lead-head" style="max-width:22ch">Same rule as everything we build.</h2>
+          <p style="margin-top:16px">Your training material goes in. Nothing else does. No employee PII beyond a first name, no system connections, no data handover.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:44px" class="reveal">
+        <a href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book a demo — bring your material, watch a course build itself</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer>
+  <div class="footer-mocks">
+    <div class="wrap">
+      <div class="footer-strip-label">The same moments your reps live</div>
+      <div class="strip">
+        <div data-mock="win" data-static="1"></div>
+        <div data-mock="board" data-static="1"></div>
+        <div data-mock="insight" data-static="1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap footer-main">
+    <div class="footer-brand">
+      <img src="/assets/logo-white.svg" alt="DryRunZ" width="248" height="94">
+      <p class="footer-blurb">DryRunZ is a lean, AI-powered team building the practice layer for customer-facing work. Founded in Israel. Fluent in English, Arabic, Greek, Spanish — and counting.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="/practice">Practice</a>
+      <a href="/learn">Learn</a>
+      <a href="/loop">Loop</a>
+      <a href="/use-cases">Use cases</a>
+      <a href="/pricing">Pricing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/blog">Blog</a>
+      <a href="https://calendly.com/dryrunz/intro-to-your-ai-coach?month=2025-10" target="_blank" rel="noopener">Book a demo</a>
+      <a href="/demo">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>© 2026 DryRunZ</span>
+    <span class="sep">·</span>
+    <span>Practice Practice Practice Practice Perfect</span>
+    <span class="award" aria-label="Second place fintech award winner">🏆 2nd place · Fintech Award winner</span>
+  </div>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>
